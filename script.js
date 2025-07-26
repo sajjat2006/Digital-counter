@@ -10,12 +10,12 @@ let body= document.querySelector("body");
 darkMode.addEventListener("click",function(){
     main.classList.add("dark");
     main.classList.remove("light");
-    body.classList.add("bmode1")
+    body.classList.remove("bmode1")
 })
 lightMode.addEventListener("click",function(){
     main.classList.add("light");
     main.classList.remove("dark");
-    body.classList.remove("bmode1")
+    body.classList.add("bmode1")
 })
 
 

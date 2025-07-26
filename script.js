@@ -1,7 +1,24 @@
+let darkMode= document.querySelector("#dark-mode");
+let lightMode= document.querySelector("#light-mode");
 let display= document.querySelector(".display");
 let plus= document.querySelector("#plus");
 let minus= document.querySelector("#minus");
-let reset= document.querySelector(".reset")
+let reset= document.querySelector(".reset");
+let main= document.querySelector(".main");
+let body= document.querySelector("body");
+
+darkMode.addEventListener("click",function(){
+    main.classList.add("dark");
+    main.classList.remove("light");
+    body.classList.add("bmode1")
+})
+lightMode.addEventListener("click",function(){
+    main.classList.add("light");
+    main.classList.remove("dark");
+    body.classList.remove("bmode1")
+})
+
+
 let count=0;
 function updateDisplay(){
     display.innerText= count;

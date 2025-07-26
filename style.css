@@ -9,17 +9,56 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.bmode1{
+    background-color: #3f0227;
 }
 
+/** toggol btn**/
+.toggle{
+    height: 5vh;
+    width: 15vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    margin-bottom: 20vh;
+}
+#dark-mode{
+    width: 7.5vh;
+    border-bottom-left-radius: 3vh;
+    border-top-left-radius: 3vh;
+    border: 1px solid rgb(0, 0, 0) ;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#light-mode{
+    width: 7.5vh;
+    border-bottom-right-radius: 3vh;
+    border-top-right-radius: 3vh;
+    border: 1px solid black ;
+    font-weight: bold;
+     cursor: pointer;
+}
 .main{
     height: 50vh;
     width: 40vh;
-    background-color: #EFEDE4;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 1px 1px 2px 0 black;
+}
+.light{
+    background-color: #EFEDE4;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
 }
 .main h2{
     height: 10vh;
